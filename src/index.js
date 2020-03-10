@@ -1,8 +1,4 @@
 module.exports = function towelSort(matrix) {
-    var arr2 = [];
-    for (i = 0; i < matrix.length; i++) {
-        for (j = 0; j < matrix[i].length; j++) {
-            arr2.push(matrix[i][j]);
-        }
-    }
+    var result = [].concat(arr[0], arr[1], arr[2]);
+    return result;
 };
