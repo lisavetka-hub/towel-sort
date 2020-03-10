@@ -1,10 +1,4 @@
 module.exports = function towelSort(matrix) {
-    return (matrix || []).reduce(
-        (accum, currentElement, idx) =>
-            (accum = [
-                ...accum,
-                ...(idx % 2 ? currentElement.reverse() : currentElement)
-            ]),
-        []
-    );
+    var result = [].concat(matrix[0], matrix[1], matrix[2]);
+    return result;
 };
